@@ -405,4 +405,7 @@ body {
   .scroll__img {
     gap: 48px;
   }
+  .scroll__img img {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=main.css.map */
