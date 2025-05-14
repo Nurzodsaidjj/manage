@@ -1,0 +1,59 @@
+.hero__content{
+    text-align: center;
+    margin-top: 19px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero__title{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 40px;
+line-height: 125%;
+letter-spacing: -0.03em;
+color: #242d52;
+margin-bottom: 9px;
+}
+.hero__text{
+    font-family: var(--font-family);
+font-weight: 300;
+font-size: 16px;
+line-height: 175%;
+color: #242d52;
+margin-bottom: 29px;
+}
+.hero__btn{
+    @include GetButtton;
+}
+.hero__img{
+    text-align: center;
+}
+
+@media screen and (min-width:920px) {
+    .hero__block{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero__content{
+        text-align: start;
+        margin-top: 0;
+        max-width: 448px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hero{
+        padding-top: 120px;
+    }
+    .hero__title{
+        font-size: 56px;
+        line-height: 114%;
+        margin-bottom: 16px;
+    }
+    .hero__text{
+        font-size: 16px;
+        line-height: 162%;
+        max-width: 350px;
+    }
+}

@@ -1,0 +1,47 @@
+.header{
+    padding-top: 41px;
+}
+.header__logo{
+    width: 110px;
+}
+.header__menu{
+    width: 25px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/header__menu.svg);
+    background-position: center;
+}
+.header__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__list{
+    gap: 32px;
+    display: none;
+}
+.header__btn{
+    @include GetButtton;
+    display: none;
+}
+.header__link{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 13px;
+color: #242d52;
+}
+@media screen and (min-width:768px) {
+    .header__menu{
+        display: none;
+    }
+    .header__list{
+         display: flex;
+    }
+    .header__btn{
+        display: inline-block;
+    }
+    .header__logo{
+        width: 147px;
+    }
+}

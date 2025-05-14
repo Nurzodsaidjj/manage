@@ -1,0 +1,75 @@
+.said{
+    padding-top: 62px;
+}
+.said__title{
+    font-family: var(--font-family);
+font-weight: 800;
+font-size: 32px;
+line-height: 141%;
+letter-spacing: -0.02em;
+text-align: center;
+color: #242d52;
+max-width: 332px;
+margin-bottom: 62px;
+margin-left: auto;
+margin-right: auto;
+}
+.said__subtitle{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 16px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #242d52;
+}
+.said__text{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 186%;
+text-align: center;
+color: #242d52;
+opacity: 0.5;
+}
+.said__cards{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 2rem;
+}
+.said__item{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.said__btn{
+    @include GetButtton;
+}
+.scroll__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .said__cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .said__cards{
+    grid-template-columns: 1fr;
+  }
+  .said__list:nth-child(2){
+    display: none;
+  }
+  .said__list:nth-child(3){
+    display: none;
+  }
+  .scroll__img{
+    gap: 48px;
+  }
+}
